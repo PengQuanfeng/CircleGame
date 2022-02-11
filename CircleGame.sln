@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGameModelCore", "Circ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGameServiceCore", "CircleGameServiceCore\CircleGameServiceCore.csproj", "{4E25B68E-B98B-4560-8533-E94B6EDF365C}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CircleGameControl", "CircleGameControl\CircleGameControl.fsproj", "{0C5D29CF-A0E6-49A9-9762-BDC484BD84E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{4E25B68E-B98B-4560-8533-E94B6EDF365C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E25B68E-B98B-4560-8533-E94B6EDF365C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E25B68E-B98B-4560-8533-E94B6EDF365C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C5D29CF-A0E6-49A9-9762-BDC484BD84E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C5D29CF-A0E6-49A9-9762-BDC484BD84E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C5D29CF-A0E6-49A9-9762-BDC484BD84E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C5D29CF-A0E6-49A9-9762-BDC484BD84E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 		{F9DE9A05-950D-4064-9CDD-E0EFC8454AF0} = {95721860-7F53-414D-A149-F62B39ED7598}
 		{18B76517-3619-476D-91D7-105F89630414} = {95721860-7F53-414D-A149-F62B39ED7598}
 		{4E25B68E-B98B-4560-8533-E94B6EDF365C} = {95721860-7F53-414D-A149-F62B39ED7598}
+		{0C5D29CF-A0E6-49A9-9762-BDC484BD84E7} = {95721860-7F53-414D-A149-F62B39ED7598}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C44DA2C7-9A54-4FED-AFFB-9D180610A52E}
