@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGame", "CircleGame.csproj", "{98F3E71F-F577-4B32-A681-BC17E34EA0C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGameService", "..\CircleGameService\CircleGameService.csproj", "{B4786FC3-51D2-46AA-A25F-E1112BB75611}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGameConfig", "..\CircleGameConfig\CircleGameConfig.csproj", "{D61A3900-2712-46C9-981C-010B31D2A2CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGameLoger", "..\CircleGameLoger\CircleGameLoger.csproj", "{D92AEE2D-4046-4E07-B076-ED332813F40D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGameModel", "..\CircleGameModel\CircleGameModel.csproj", "{D5206E27-93E5-4EB4-8F85-97F2C9A772C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGameConfigCore", "..\CircleGameConfigCore\CircleGameConfigCore.csproj", "{22753C22-4385-4144-AEEA-34D05EC72A87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98F3E71F-F577-4B32-A681-BC17E34EA0C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98F3E71F-F577-4B32-A681-BC17E34EA0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98F3E71F-F577-4B32-A681-BC17E34EA0C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98F3E71F-F577-4B32-A681-BC17E34EA0C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4786FC3-51D2-46AA-A25F-E1112BB75611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4786FC3-51D2-46AA-A25F-E1112BB75611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4786FC3-51D2-46AA-A25F-E1112BB75611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4786FC3-51D2-46AA-A25F-E1112BB75611}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D61A3900-2712-46C9-981C-010B31D2A2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D61A3900-2712-46C9-981C-010B31D2A2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D61A3900-2712-46C9-981C-010B31D2A2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D61A3900-2712-46C9-981C-010B31D2A2CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D92AEE2D-4046-4E07-B076-ED332813F40D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D92AEE2D-4046-4E07-B076-ED332813F40D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D92AEE2D-4046-4E07-B076-ED332813F40D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D92AEE2D-4046-4E07-B076-ED332813F40D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5206E27-93E5-4EB4-8F85-97F2C9A772C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5206E27-93E5-4EB4-8F85-97F2C9A772C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5206E27-93E5-4EB4-8F85-97F2C9A772C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5206E27-93E5-4EB4-8F85-97F2C9A772C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22753C22-4385-4144-AEEA-34D05EC72A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22753C22-4385-4144-AEEA-34D05EC72A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22753C22-4385-4144-AEEA-34D05EC72A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22753C22-4385-4144-AEEA-34D05EC72A87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C44DA2C7-9A54-4FED-AFFB-9D180610A52E}
+	EndGlobalSection
+EndGlobal
