@@ -1,0 +1,17 @@
+C:\Users\Thinkpad\source\repos\CircleGameLoger\bin\Debug\CircleGameLoger.dll
+C:\Users\Thinkpad\source\repos\CircleGameLoger\bin\Debug\CircleGameLoger.pdb
+C:\Users\Thinkpad\source\repos\CircleGameLoger\bin\Debug\log4net.dll
+C:\Users\Thinkpad\source\repos\CircleGameLoger\bin\Debug\log4net.xml
+C:\Users\Thinkpad\source\repos\CircleGameLoger\obj\Debug\CircleGameLoger.csproj.AssemblyReference.cache
+C:\Users\Thinkpad\source\repos\CircleGameLoger\obj\Debug\CircleGameLoger.csproj.CoreCompileInputs.cache
+C:\Users\Thinkpad\source\repos\CircleGameLoger\obj\Debug\CircleGameLoger.csproj.CopyComplete
+C:\Users\Thinkpad\source\repos\CircleGameLoger\obj\Debug\CircleGameLoger.dll
+C:\Users\Thinkpad\source\repos\CircleGameLoger\obj\Debug\CircleGameLoger.pdb
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameLoger\bin\Debug\CircleGameLoger.dll
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameLoger\bin\Debug\CircleGameLoger.pdb
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameLoger\bin\Debug\log4net.xml
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameLoger\obj\Debug\CircleGameLoger.csproj.AssemblyReference.cache
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameLoger\obj\Debug\CircleGameLoger.csproj.CoreCompileInputs.cache
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameLoger\obj\Debug\CircleGameLoger.csproj.CopyComplete
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameLoger\obj\Debug\CircleGameLoger.dll
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameLoger\obj\Debug\CircleGameLoger.pdb

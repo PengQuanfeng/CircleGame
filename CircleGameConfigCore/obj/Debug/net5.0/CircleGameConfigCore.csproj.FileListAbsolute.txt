@@ -1,0 +1,12 @@
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameConfigCore\bin\Debug\net5.0\CircleGameConfigCore.deps.json
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameConfigCore\bin\Debug\net5.0\CircleGameConfigCore.dll
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameConfigCore\bin\Debug\net5.0\ref\CircleGameConfigCore.dll
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameConfigCore\bin\Debug\net5.0\CircleGameConfigCore.pdb
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameConfigCore\obj\Debug\net5.0\CircleGameConfigCore.csproj.AssemblyReference.cache
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameConfigCore\obj\Debug\net5.0\CircleGameConfigCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameConfigCore\obj\Debug\net5.0\CircleGameConfigCore.AssemblyInfoInputs.cache
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameConfigCore\obj\Debug\net5.0\CircleGameConfigCore.AssemblyInfo.cs
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameConfigCore\obj\Debug\net5.0\CircleGameConfigCore.csproj.CoreCompileInputs.cache
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameConfigCore\obj\Debug\net5.0\CircleGameConfigCore.dll
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameConfigCore\obj\Debug\net5.0\ref\CircleGameConfigCore.dll
+C:\Users\Thinkpad\source\repos\CircleGame\CircleGameConfigCore\obj\Debug\net5.0\CircleGameConfigCore.pdb

@@ -95,19 +95,19 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CircleGameConfig\CircleGameConfig.csproj">
+    <ProjectReference Include="CircleGameConfig\CircleGameConfig.csproj">
       <Project>{d61a3900-2712-46c9-981c-010b31d2a2cc}</Project>
       <Name>CircleGameConfig</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CircleGameLoger\CircleGameLoger.csproj">
+    <ProjectReference Include="CircleGameLoger\CircleGameLoger.csproj">
       <Project>{d92aee2d-4046-4e07-b076-ed332813f40d}</Project>
       <Name>CircleGameLoger</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CircleGameModel\CircleGameModel.csproj">
+    <ProjectReference Include="CircleGameModel\CircleGameModel.csproj">
       <Project>{d5206e27-93e5-4eb4-8f85-97f2c9a772c6}</Project>
       <Name>CircleGameModel</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CircleGameService\CircleGameService.csproj">
+    <ProjectReference Include="CircleGameService\CircleGameService.csproj">
       <Project>{b4786fc3-51d2-46aa-a25f-e1112bb75611}</Project>
       <Name>CircleGameService</Name>
     </ProjectReference>
