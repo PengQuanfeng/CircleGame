@@ -1,22 +1,24 @@
 ﻿using CircleGameConfig;
 using CircleGameModel;
+using ICircleGameServiceCore;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CircleGameService
 {
-    public class MyInviteDetailService
+    public class MyInviteDetailService : IMyInviteDetailService
     {
         /// <summary>
         /// 获取到合伙对应被邀请人列表
         /// </summary>
         /// <param name="copartnerId">邀请人</param>
         /// <returns></returns>
-        public List<MyInviteDetail> GetMyInviteDetails(String copartnerId)
+        public async Task<List<MyInviteDetail>> GetMyInviteDetailsAsync(String copartnerId)
         {
             String baseUrl = Config.GetBaseUrl();
             String myInviteDetailUrl = Config.GetMyInviteDetail();
@@ -30,7 +32,7 @@ namespace CircleGameService
             {
                 httpClient.DefaultRequestHeaders.Add("Cookie", cookie);
                 var myInviteDetailResult = httpClient.GetAsync(baseUrl + myInviteDetailUrl);
-                String myInviteDetailInfo = myInviteDetailResult.Result.Content.ReadAsStringAsync().Result;
+                String myInviteDetailInfo = await myInviteDetailResult.Result.Content.ReadAsStringAsync();
                 MyInviteDetailData myInviteDetailData = JsonConvert.DeserializeObject<MyInviteDetailData>(myInviteDetailInfo);
                 System.Console.WriteLine(myInviteDetailData);
                 Log4Helper.Info(this.GetType(), "【成功获取合伙人对应被邀请人列表】");

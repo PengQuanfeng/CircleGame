@@ -1,18 +1,36 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="app.config" />
+    <Content Remove="log4net.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CircleGameConfigCore\CircleGameConfigCore.csproj" />
+    <ProjectReference Include="..\CircleGameDTOCore\CircleGameDTOCore.csproj" />
     <ProjectReference Include="..\CircleGameLogerCore\CircleGameLogerCore.csproj" />
     <ProjectReference Include="..\CircleGameModelCore\CircleGameModelCore.csproj" />
     <ProjectReference Include="..\CircleGameServiceCore\CircleGameServiceCore.csproj" />
+    <ProjectReference Include="..\ICircleGameServiceCore\ICircleGameServiceCore.csproj" />
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>

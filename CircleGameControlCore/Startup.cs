@@ -1,3 +1,5 @@
+using CircleGameService;
+using ICircleGameServiceCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -31,6 +33,10 @@ namespace CircleGameControlCore
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CircleGameControlCore", Version = "v1" });
             });
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddScoped<ICopartnerService, CopartnerService>();
+            services.AddScoped<ICircleWinnerRecordService, CircleWinnerRecordService>();
+            services.AddScoped<IMyInviteDetailService, MyInviteDetailService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

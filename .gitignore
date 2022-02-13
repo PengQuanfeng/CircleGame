@@ -22,3 +22,8 @@
 /CircleGameControl/obj
 /CircleGameControlCore/bin/Debug/net5.0
 /CircleGameControlCore/obj
+/CircleGameControl
+/CircleGameDTOCore/obj
+/ICircleGameServiceCore/bin/Debug/net5.0
+/CircleGameDTOCore/bin/Debug/net5.0
+/ICircleGameServiceCore/obj

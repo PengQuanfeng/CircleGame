@@ -6,10 +6,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CircleGameService
 {
-    public class CircleWinnerRecordService
+    public class CircleWinnerRecordService : ICircleWinnerRecordService
     {
         /// <summary>
         /// 最大赢家牌局列表
@@ -17,11 +18,11 @@ namespace CircleGameService
         /// <param name="copartnerId">邀请人</param>
         /// <param name="userId">被邀请人</param>
         /// <returns></returns>
-        public List<CircleWinnerRecord> GetWinnerRecords(String copartnerId,String userId)
+        public async Task<List<CircleWinnerRecord>> GetWinnerRecordsAsync(String copartnerId, String userId)
         {
             String baseUrl = Config.GetBaseUrl();
             String winnerRecordUrl = Config.GetWinnerRecord();
-            winnerRecordUrl = winnerRecordUrl + "?" + "startDate=" + Config.GetSelectedDateTime() + "&endDate=" + Config.GetSelectedDateTime() +"&user_id="+userId+ "&inviter_uid=" + copartnerId + "&circle_id=" + Config.GetCircleId();
+            winnerRecordUrl = winnerRecordUrl + "?" + "startDate=" + Config.GetSelectedDateTime() + "&endDate=" + Config.GetSelectedDateTime() + "&user_id=" + userId + "&inviter_uid=" + copartnerId + "&circle_id=" + Config.GetCircleId();
             var httpclientHandler = new HttpClientHandler()
             {
                 UseCookies = false
@@ -31,7 +32,7 @@ namespace CircleGameService
             {
                 httpClient.DefaultRequestHeaders.Add("Cookie", cookie);
                 var circleWinnerRecordResult = httpClient.GetAsync(baseUrl + winnerRecordUrl);
-                String circleWinnerRecordInfo = circleWinnerRecordResult.Result.Content.ReadAsStringAsync().Result;
+                String circleWinnerRecordInfo = await circleWinnerRecordResult.Result.Content.ReadAsStringAsync();
                 CircleWinnerRecordData circleWinnerRecordData = JsonConvert.DeserializeObject<CircleWinnerRecordData>(circleWinnerRecordInfo);
                 System.Console.WriteLine(circleWinnerRecordData);
                 Log4Helper.Info(this.GetType(), "【成功获取合伙人对应被邀请人牌局列表信息】");

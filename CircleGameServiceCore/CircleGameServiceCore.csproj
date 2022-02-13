@@ -5,13 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CircleGameConfigCore\CircleGameConfigCore.csproj" />
+    <ProjectReference Include="..\CircleGameDTOCore\CircleGameDTOCore.csproj" />
     <ProjectReference Include="..\CircleGameLogerCore\CircleGameLogerCore.csproj" />
     <ProjectReference Include="..\CircleGameModelCore\CircleGameModelCore.csproj" />
+    <ProjectReference Include="..\ICircleGameServiceCore\ICircleGameServiceCore.csproj" />
   </ItemGroup>
 
 </Project>
