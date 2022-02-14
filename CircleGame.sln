@@ -19,17 +19,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "netCore", "netCore", "{9572
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "netFramework", "netFramework", "{5BFDAA6D-1A23-48C4-AD3D-A15143DCE567}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGameLogerCore", "CircleGameLogerCore\CircleGameLogerCore.csproj", "{F9DE9A05-950D-4064-9CDD-E0EFC8454AF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircleGameLogerCore", "CircleGameLogerCore\CircleGameLogerCore.csproj", "{F9DE9A05-950D-4064-9CDD-E0EFC8454AF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGameModelCore", "CircleGameModelCore\CircleGameModelCore.csproj", "{18B76517-3619-476D-91D7-105F89630414}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircleGameModelCore", "CircleGameModelCore\CircleGameModelCore.csproj", "{18B76517-3619-476D-91D7-105F89630414}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGameServiceCore", "CircleGameServiceCore\CircleGameServiceCore.csproj", "{4E25B68E-B98B-4560-8533-E94B6EDF365C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircleGameServiceCore", "CircleGameServiceCore\CircleGameServiceCore.csproj", "{4E25B68E-B98B-4560-8533-E94B6EDF365C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGameControlCore", "CircleGameControlCore\CircleGameControlCore.csproj", "{6D762B91-F35A-4EAB-A7E2-877BBCA8BA29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircleGameControlCore", "CircleGameControlCore\CircleGameControlCore.csproj", "{6D762B91-F35A-4EAB-A7E2-877BBCA8BA29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGameDTOCore", "CircleGameDTOCore\CircleGameDTOCore.csproj", "{E34299B3-9F6F-408E-9FA5-B012ADA8254F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircleGameDTOCore", "CircleGameDTOCore\CircleGameDTOCore.csproj", "{E34299B3-9F6F-408E-9FA5-B012ADA8254F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ICircleGameServiceCore", "ICircleGameServiceCore\ICircleGameServiceCore.csproj", "{F3DFBB34-82CC-492D-8C11-9F24466FF976}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ICircleGameServiceCore", "ICircleGameServiceCore\ICircleGameServiceCore.csproj", "{F3DFBB34-82CC-492D-8C11-9F24466FF976}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleGameCommonService", "CircleGameCommonService\CircleGameCommonService.csproj", "{91017A5C-4BC9-4FC2-B473-F017F187852C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{F3DFBB34-82CC-492D-8C11-9F24466FF976}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F3DFBB34-82CC-492D-8C11-9F24466FF976}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3DFBB34-82CC-492D-8C11-9F24466FF976}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91017A5C-4BC9-4FC2-B473-F017F187852C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91017A5C-4BC9-4FC2-B473-F017F187852C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91017A5C-4BC9-4FC2-B473-F017F187852C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91017A5C-4BC9-4FC2-B473-F017F187852C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +108,7 @@ Global
 		{6D762B91-F35A-4EAB-A7E2-877BBCA8BA29} = {95721860-7F53-414D-A149-F62B39ED7598}
 		{E34299B3-9F6F-408E-9FA5-B012ADA8254F} = {95721860-7F53-414D-A149-F62B39ED7598}
 		{F3DFBB34-82CC-492D-8C11-9F24466FF976} = {95721860-7F53-414D-A149-F62B39ED7598}
+		{91017A5C-4BC9-4FC2-B473-F017F187852C} = {5BFDAA6D-1A23-48C4-AD3D-A15143DCE567}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C44DA2C7-9A54-4FED-AFFB-9D180610A52E}

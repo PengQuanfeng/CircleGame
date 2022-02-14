@@ -49,6 +49,7 @@ namespace CircleGame
             this.Win_count3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Win_count3Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnExportInviter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInviter)).BeginInit();
             this.SuspendLayout();
             // 
@@ -256,11 +257,22 @@ namespace CircleGame
             this.Price.ReadOnly = true;
             this.Price.Width = 70;
             // 
+            // btnExportInviter
+            // 
+            this.btnExportInviter.Location = new System.Drawing.Point(682, 0);
+            this.btnExportInviter.Name = "btnExportInviter";
+            this.btnExportInviter.Size = new System.Drawing.Size(95, 33);
+            this.btnExportInviter.TabIndex = 6;
+            this.btnExportInviter.Text = "导出Excel";
+            this.btnExportInviter.UseVisualStyleBackColor = true;
+            this.btnExportInviter.Click += new System.EventHandler(this.btnExportInviter_Click);
+            // 
             // InviterFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2180, 840);
+            this.Controls.Add(this.btnExportInviter);
             this.Controls.Add(this.dgvInviter);
             this.Controls.Add(this.lblCopartnerName);
             this.Controls.Add(this.label3);
@@ -298,5 +310,6 @@ namespace CircleGame
         private System.Windows.Forms.DataGridViewTextBoxColumn Win_count3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Win_count3Price;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.Button btnExportInviter;
     }
 }

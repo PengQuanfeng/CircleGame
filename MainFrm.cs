@@ -1,4 +1,5 @@
-﻿using CircleGameConfig;
+﻿using CircleGameCommonService;
+using CircleGameConfig;
 using CircleGameModel;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,8 @@ namespace CircleGame
     {
         private delegate void UpdateUI(InviterPriceInput inviterPriceInput);
         private UpdateUI updateUI;
+        private IExcelService excelService = new ExcelService();
+        private string excelPath = AppDomain.CurrentDomain.BaseDirectory;
 
         private delegate void CompleteCallBack();
         private CompleteCallBack completeCallBack;
@@ -192,7 +195,7 @@ namespace CircleGame
         private void dgvCopartner_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             //点击的是总费用
-            if (sender is DataGridView && e.ColumnIndex == 4 && e.RowIndex > 0)
+            if (sender is DataGridView && e.ColumnIndex == 4 && e.RowIndex >= 0)
             {
                 DataGridView dataGridView = sender as DataGridView;
                 DataGridViewRow row = dataGridView.Rows[e.RowIndex];
@@ -201,9 +204,46 @@ namespace CircleGame
                 String unitPrice = row.Cells["UnitPrice"].Value.ToString();
                 String doubleUnitPrice = row.Cells["DoubleUnitPrice"].Value.ToString();
 
-                List<MyInviteDetail> myInviteDetails = copartnerDic[inviter_uid];
+                List<MyInviteDetail> myInviteDetails = new List<MyInviteDetail>();
+                if (copartnerDic.ContainsKey(inviter_uid))
+                {
+                    myInviteDetails = copartnerDic[inviter_uid];
+                }
                 InviterFrm inviterFrm = new InviterFrm(inviter_uid, copartnerName, myInviteDetails);
                 DialogResult dialogResult = inviterFrm.ShowDialog();
+            }
+        }
+
+        private void btnExportCopartner_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvCopartner != null && dgvCopartner.Rows.Count > 0)
+                {
+                    DataTable dataTable = new DataTable();
+                    for (int columnIndex = 0; columnIndex < dgvCopartner.Columns.Count; columnIndex++)
+                    {
+                        dataTable.Columns.Add(dgvCopartner.Columns[columnIndex].HeaderText);
+                    }
+
+                    for (int rowIndex = 0; rowIndex < dgvCopartner.Rows.Count; rowIndex++)
+                    {
+                        DataGridViewRow row = dgvCopartner.Rows[rowIndex];
+                        DataRow newRow = dataTable.Rows.Add();
+                        for (int cellIndex = 0; cellIndex < row.Cells.Count; cellIndex++)
+                        {
+                            newRow[cellIndex] = row.Cells[cellIndex].Value;
+                        }
+                    }
+
+                    excelService.ExportExcel(excelPath + "\\" + Config.GetSelectedDateTime() + ".xlsx", "合伙人费用概要统计", dataTable);
+                    MessageBox.Show("导出成功");
+                }
+            }
+            catch (Exception ex)
+            {
+                Log4Helper.Error(this.GetType(), ex.Message);
+                MessageBox.Show("导出Excel文件出错，请确保文件没被打开");
             }
         }
     }

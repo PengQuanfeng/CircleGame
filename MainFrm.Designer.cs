@@ -29,9 +29,10 @@ namespace CircleGame
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabContrl = new System.Windows.Forms.TabControl();
             this.copartnerPage = new System.Windows.Forms.TabPage();
+            this.btnExportCopartner = new System.Windows.Forms.Button();
             this.lbl = new System.Windows.Forms.Label();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.btnConfirm = new System.Windows.Forms.Button();
@@ -58,6 +59,7 @@ namespace CircleGame
             // 
             // copartnerPage
             // 
+            this.copartnerPage.Controls.Add(this.btnExportCopartner);
             this.copartnerPage.Controls.Add(this.lbl);
             this.copartnerPage.Controls.Add(this.progressBar);
             this.copartnerPage.Controls.Add(this.btnConfirm);
@@ -71,11 +73,21 @@ namespace CircleGame
             this.copartnerPage.Text = "合伙人费用";
             this.copartnerPage.UseVisualStyleBackColor = true;
             // 
+            // btnExportCopartner
+            // 
+            this.btnExportCopartner.Location = new System.Drawing.Point(365, 13);
+            this.btnExportCopartner.Name = "btnExportCopartner";
+            this.btnExportCopartner.Size = new System.Drawing.Size(95, 33);
+            this.btnExportCopartner.TabIndex = 5;
+            this.btnExportCopartner.Text = "导出Excel";
+            this.btnExportCopartner.UseVisualStyleBackColor = true;
+            this.btnExportCopartner.Click += new System.EventHandler(this.btnExportCopartner_Click);
+            // 
             // lbl
             // 
             this.lbl.AutoSize = true;
             this.lbl.ForeColor = System.Drawing.Color.Red;
-            this.lbl.Location = new System.Drawing.Point(392, 22);
+            this.lbl.Location = new System.Drawing.Point(491, 20);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(0, 15);
             this.lbl.TabIndex = 4;
@@ -141,8 +153,8 @@ namespace CircleGame
             // 
             // UnitPrice
             // 
-            dataGridViewCellStyle3.Format = "N2";
-            this.UnitPrice.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Format = "N2";
+            this.UnitPrice.DefaultCellStyle = dataGridViewCellStyle1;
             this.UnitPrice.HeaderText = "两人局费用基数";
             this.UnitPrice.MinimumWidth = 6;
             this.UnitPrice.Name = "UnitPrice";
@@ -198,6 +210,7 @@ namespace CircleGame
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.DateTimePicker dateTimePicker;
+        private System.Windows.Forms.Button btnExportCopartner;
     }
 }
 
