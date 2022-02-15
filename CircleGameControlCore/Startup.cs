@@ -1,3 +1,4 @@
+using CircleGameCommonServiceCore;
 using CircleGameService;
 using ICircleGameServiceCore;
 using Microsoft.AspNetCore.Builder;
@@ -37,6 +38,7 @@ namespace CircleGameControlCore
             services.AddScoped<ICopartnerService, CopartnerService>();
             services.AddScoped<ICircleWinnerRecordService, CircleWinnerRecordService>();
             services.AddScoped<IMyInviteDetailService, MyInviteDetailService>();
+            services.AddScoped<IExcelService, ExcelService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

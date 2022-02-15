@@ -86,6 +86,7 @@ namespace CircleGameService
 
             CopartnerPriceOutput copartnerPriceOutput = new CopartnerPriceOutput();
             copartnerPriceOutput.CopartnerID = copartnerPriceInput.CopartnerID;
+            copartnerPriceOutput.CopartnerName = copartnerPriceInput.CopartnerName;
             copartnerPriceOutput.TotalPrice = totalPrice;
             List<MyInviteDetailOutput> myInviteDetailOutputs = mapper.Map<List<MyInviteDetailOutput>>(myInviteDetails);
             copartnerPriceOutput.MyInviteDetailOutputs = myInviteDetailOutputs;

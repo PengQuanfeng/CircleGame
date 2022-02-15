@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CircleGameCommonServiceCore\CircleGameCommonServiceCore.csproj" />
     <ProjectReference Include="..\CircleGameConfigCore\CircleGameConfigCore.csproj" />
     <ProjectReference Include="..\CircleGameDTOCore\CircleGameDTOCore.csproj" />
     <ProjectReference Include="..\CircleGameLogerCore\CircleGameLogerCore.csproj" />

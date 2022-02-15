@@ -16,6 +16,11 @@ namespace CircleGameModel
         public String CopartnerID { get; set; }
 
         /// <summary>
+        /// 合伙人名称
+        /// </summary>
+        public String CopartnerName { get; set; }
+
+        /// <summary>
         /// 总费用
         /// </summary>
         public double TotalPrice { get; set; } = 0;
