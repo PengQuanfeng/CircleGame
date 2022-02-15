@@ -29,3 +29,5 @@
 /ICircleGameServiceCore/obj
 /CircleGameCommonService/bin/Debug
 /CircleGameCommonService/obj/Debug
+/CircleGameCommonServiceCore/bin/Debug/net5.0
+/CircleGameCommonServiceCore/obj

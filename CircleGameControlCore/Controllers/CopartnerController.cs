@@ -26,6 +26,10 @@ namespace CircleGameControlCore.Controllers
             this.map = map;
         }
 
+        /// <summary>
+        /// 获取到所有合伙人列表
+        /// </summary>
+        /// <returns></returns>
         [HttpGet("GetCopartners")]
         public async Task<List<CopartnerOutput>> GetCopartners()
         {
@@ -42,7 +46,7 @@ namespace CircleGameControlCore.Controllers
         }
 
         /// <summary>
-        /// 
+        /// 获取到合伙人下对应被邀请人收费详情
         /// </summary>
         /// <param name="copartnerID"></param>
         /// <param name="unitPrice"></param>
@@ -56,7 +60,7 @@ namespace CircleGameControlCore.Controllers
         }
 
         /// <summary>
-        /// 
+        /// 更新被选择的时间
         /// </summary>
         /// <param name="selectedDateTime"></param>
         /// <returns></returns>
@@ -65,5 +69,7 @@ namespace CircleGameControlCore.Controllers
         {
             Config.SetSelectedDateTime(selectedDateTime.ToString("yyyy-MM-dd"));
         }
+
+        
     }
 }
