@@ -5,6 +5,6 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_PublishTargetUrl>C:\Users\Thinkpad\source\repos\CircleGame\CircleGameControlCore\bin\Release\net5.0\publish\</_PublishTargetUrl>
-    <History>True|2022-02-16T05:40:59.7453573Z;</History>
+    <History>True|2022-02-16T09:20:36.2418133Z;True|2022-02-16T13:40:59.7453573+08:00;</History>
   </PropertyGroup>
 </Project>
