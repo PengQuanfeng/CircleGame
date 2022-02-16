@@ -31,3 +31,16 @@
 /CircleGameCommonService/obj/Debug
 /CircleGameCommonServiceCore/bin/Debug/net5.0
 /CircleGameCommonServiceCore/obj
+/CircleGameControlCore/bin/Release/net5.0
+/CircleGameCommonServiceCore/bin/Release/net5.0/ref
+/CircleGameDTOCore/bin/Release/net5.0/ref
+/CircleGameDTOCore/bin/Release/net5.0
+/CircleGameLogerCore/bin/Release/net5.0/ref
+/CircleGameModelCore/bin/Release/net5.0/ref
+/CircleGameServiceCore/bin/Release/net5.0/ref
+/CircleGameLogerCore/bin/Release/net5.0
+/CircleGameModelCore/bin/Release/net5.0
+/CircleGameServiceCore/bin/Release/net5.0
+/ICircleGameServiceCore/bin/Release/net5.0
+/CircleGameCommonService/obj/Release
+/CircleGameCommonServiceCore/bin/Release/net5.0
